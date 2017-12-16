@@ -1,0 +1,7 @@
+- name: Example of how to install Filebeat with default configuration
+  hosts: all
+  become: true
+  vars:
+    - ansible_sudo_pass: "{{ sudo_passwd }}"
+  roles:
+    - filebeat-install
